@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Employee Task</title>
+    <style>
+    #div
+{
+    background-color:greenyellow;
+    width: 470px;
+    height: 470px;
+    border-radius: 100%;
+    border: 2px solid black;
+    position: relative;
+    transition: rotate 20s;
+    box-shadow: 0px 0px 10px black;
+}
+#div:hover
+{
+    rotate: 360deg;
+}
+#Employee
+{
+    width: 150px;
+    height: 150px;
+    position:absolute;
+    left: 34%;
+    top: 33%;
+    background-color:aquamarine;
+    border-radius: 100%;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: georgia;
+    border: 2px solid black;
+    box-shadow: 0px 0px 10px black;
+}
+#FirstName
+{
+    position:absolute;
+    right: 10px;
+    top: 44%;
+    font-size: 20px;
+}
+#SurName
+{
+    position:absolute;
+    right: 95px;
+    top: 70%;
+    rotate: 56deg;
+    font-size: 20px;
+}
+#Email
+{
+    position:absolute;
+    left: 60px;
+    top: 73%;
+    rotate: 125deg;
+    font-size: 14px;
+}
+#PhNo
+{
+    position:absolute;
+    left: 51px;
+    top: 44%;
+    rotate: 180deg;
+    font-size: 20px;
+}
+#Gender
+{
+    position:absolute;
+    left: 120px;
+    top: 15%;
+    rotate: 240deg;
+    font-size: 20px;
+}
+#DOB
+{
+    position:absolute;
+    right: 122px;
+    top: 19.5%;
+    rotate: 308deg;
+    font-size: 20px;
+}
+    </style>
+</head>
+<body>
+    
+        <center>
+            <fieldset style="width: 460px;">
+                <h2 style="color: blue;">Employee Data</h2>
+                <table>
+                    <tr>
+                        <td>
+                            <fieldset>
+                                <legend><strong>First Name</strong></legend>
+                                <input id="A" type="text" style="border: 0px;outline: 0px;">
+                            </fieldset>
+                        </td>
+                        <td>
+                            <fieldset>
+                                <legend><strong>Sur Name</strong></legend>
+                                <input id="B" type="text" style="border: 0px;outline: 0px;">
+                            </fieldset>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <fieldset>
+                                <legend><strong>Email</strong></legend>
+                                <input id="C" type="email" style="border: 0px;outline: 0px;">
+                               
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <fieldset>
+                                <legend><strong>Phone Number</strong></legend>
+                                <input id="D" type="number" style="border: 0px;outline: 0px;">
+                            </fieldset>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <fieldset>
+                                <legend><strong>Gender</strong></legend>
+                                <center><strong>
+                                  <input id="E" type="text"placeholder="Male Female Others">
+                                </strong></center>
+                            </fieldset>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <fieldset>
+                                <legend><strong>Date Of Birth</strong></legend>
+                                <center><strong>
+                                  <input id="F" type="date">
+                                </strong></center>
+                            </fieldset>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <center>
+                              <input type="submit" style="font-size: 30px; border-radius: 20px;" onclick="emp()">
+                            </center>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+        </center>
+    
+    <br><br><br>
+
+    <center>
+        <div id="div">
+            <div id="Employee">Employee</div>
+            <h1 id="FirstName"></h1>
+            <h1 id="SurName"></h1>
+            <h1 id="Email"></h1>
+            <h1 id="PhNo"></h1>
+            <h1 id="Gender"></h1>
+            <h1 id="DOB"></h1>
+        </div>
+        <br><br><br>
+    </center>
+
+    <script>
+        function emp()
+            {
+                var a=document.getElementById("A").value
+                var b=document.getElementById("B").value
+                var c=document.getElementById("C").value
+                var d=document.getElementById("D").value
+                var e=document.getElementById("E").value
+                var f=document.getElementById("F").value
+                document.getElementById("FirstName").innerHTML=a
+                document.getElementById("SurName").innerHTML=b
+                document.getElementById("Email").innerHTML=c
+                document.getElementById("PhNo").innerHTML=d
+                document.getElementById("Gender").innerHTML=e
+                document.getElementById("DOB").innerHTML=f
+            }
+    </script>
+    
+j</body>
+</html>
